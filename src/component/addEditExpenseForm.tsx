@@ -48,7 +48,7 @@ const AddEditExpenseForm = ({expense, onSubmit, onBack}: any) => {
       setDescription('');
       setAmount('');
       setType(typeExpense[0]);
-      Keyboard.dismiss(); //
+      Keyboard.dismiss();
       showAlert(
         'Berhasil',
         `Berhasil ${expense ? 'Memperbarui' : 'Menambahkan'} Data`,

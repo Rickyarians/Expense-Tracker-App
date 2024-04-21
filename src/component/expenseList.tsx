@@ -53,7 +53,6 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
               style={{
                 marginTop: 5,
                 flex: 1,
-                // backgroundColor: color.positive,
                 justifyContent: 'center',
               }}>
               <Text

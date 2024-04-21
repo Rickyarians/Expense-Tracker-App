@@ -6,7 +6,7 @@ import {formatRupiah} from '../helper/format';
 import {moderateScale, verticalScale} from '../helper/scale';
 import {cardStyle, color, radius, typeExpense} from './const';
 
-const HeaderExpenseStatus = ({expenses, onEdit, onDelete}: any) => {
+const HeaderExpenseStatus = () => {
   const totalAmountIn = useSelector((state: RootState) => {
     return state.expenses.expenses
       .filter((expense: any) => expense.type === typeExpense[0])
