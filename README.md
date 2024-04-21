@@ -4,19 +4,18 @@
 
 ## Folder Structure
 
-
 ├── src
-│   ├── controller
-│   │   ├── **/*.css
-│   ├── views
-│   ├── model
-│   ├── index.js
+│ ├── controller
+│ │ ├── **/\*.css
+│ ├── views
+│ ├── model
+│ ├── index.js
 ├── public
-│   ├── css
-│   │   ├── **/*.css
-│   ├── images
-│   ├── js
-│   ├── index.html
+│ ├── css
+│ │ ├── **/\*.css
+│ ├── images
+│ ├── js
+│ ├── index.html
 ├── dist (or build
 ├── node_modules
 ├── package.json
@@ -25,6 +24,10 @@
 
 ## Getting Started
 
+## Preparation
+
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+
 ```bash
 git clone https://github.com/Rickyarians/expense-tracker-pmtbnk.git
 ```
@@ -32,8 +35,6 @@ git clone https://github.com/Rickyarians/expense-tracker-pmtbnk.git
 ```bash
 cd expense-tracker-pmtbnk
 ```
-
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
