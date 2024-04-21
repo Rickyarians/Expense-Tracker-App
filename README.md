@@ -90,7 +90,7 @@ This is one way to run your app — you can also run it directly from within And
 
 ## Screenshot 
 
-![alt text](https://i.ibb.co/9czcKrn/expense-add-result.png)
+![alt text](https://i.ibb.co/ZWHP8np/expense-final.png)
 
 [React Native]: <https://reactnative.dev/>
 [Redux]: <https://redux-toolkit.js.org/>
