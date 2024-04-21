@@ -23,6 +23,7 @@ import {
 } from './data/redux/actions/expenseActions';
 import {RootState} from './data/redux/store';
 import {horizontalScale, moderateScale, verticalScale} from './helper/scale';
+import { sortDescByDate } from './helper/sort';
 
 function App(): React.JSX.Element {
   const dispatch = useDispatch();
@@ -82,7 +83,7 @@ function App(): React.JSX.Element {
                 <Text>Loading...</Text>
               ) : (
                 <ExpenseList
-                  expenses={expenses}
+                  expenses={sortDescByDate(expenses)}
                   onEdit={(data: any) => dispatch(setEditDataExpense(data))}
                   onDelete={handleDeleteExpense}
                 />

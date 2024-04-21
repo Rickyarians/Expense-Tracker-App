@@ -33,6 +33,7 @@ const HeaderExpenseStatus = () => {
         {typeExpense.map(data => {
           return (
             <View
+            key={data + '-type'}
               style={{
                 flex: 1,
               }}>

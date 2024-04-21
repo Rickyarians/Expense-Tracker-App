@@ -34,6 +34,7 @@ const AddEditExpenseForm = ({expense, onSubmit, onBack}: any) => {
       description,
       amount: parseFloat(amount),
       type: type,
+      date: expense ? expense.date : Date.now(),
     };
 
     if (
@@ -88,6 +89,7 @@ const AddEditExpenseForm = ({expense, onSubmit, onBack}: any) => {
                 onPress={() => {
                   setType(item);
                 }}
+                key={item}
                 style={{
                   flex: 1,
                   marginVertical: verticalScale(10),

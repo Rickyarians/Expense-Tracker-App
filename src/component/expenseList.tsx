@@ -1,6 +1,6 @@
 import React from 'react';
-import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {formatRupiah} from '../helper/format';
+import {Alert, FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {formatDate, formatRupiah} from '../helper/format';
 import {horizontalScale, moderateScale, verticalScale} from '../helper/scale';
 import {cardStyle, color, typeExpense} from './const';
 
@@ -49,7 +49,24 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
           </View>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <TouchableOpacity
-              onPress={() => onDelete(item.id)}
+              onPress={() => 
+                {
+                  Alert.alert(
+                    'Konfirmasi',
+                    `Apakah kamu yakin menghapus ${item.type} - ${item?.description} senilai ${formatRupiah(item.amount)}?`,
+                    [
+                      {
+                        text: 'Cancel',
+                        onPress: () => {},
+                        style: 'cancel',
+                      },
+                      { text: 'OK', onPress: () =>   onDelete(item.id)},
+                    ],
+                    { cancelable: false }
+                  );
+                }
+              }
+              
               style={{
                 marginTop: 5,
                 flex: 1,
@@ -66,6 +83,10 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
             </TouchableOpacity>
           </View>
         </View>
+        <Text style={{textAlign: 'right', fontSize: moderateScale(10)}}>
+          {/* {item?.date} */}
+              {formatDate(item?.date)}
+        </Text>
       </View>
     </TouchableOpacity>
   );
