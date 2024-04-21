@@ -5,27 +5,28 @@
 ## Folder Structure
 
 |-- permatamobile
-|-- App.tsx
-|-- directoryList.md
-|-- main.tsx
-|-- component
-| |-- addEditExpenseForm.tsx
-| |-- const.ts
-| |-- expenseList.tsx
-| |-- headerExpensesStatus.tsx
-|-- data
-| |-- redux
-| |-- store.ts
-| |-- actions
-| | |-- expenseActions.ts
-| |-- const
-| | |-- expenseConst.ts
-| |-- reducer
-| |-- expenseReducer.ts
-|-- helper
-|-- alert.ts
-|-- format.ts
-|-- scale.ts
+    |-- App.tsx
+    |-- directoryList.md
+    |-- main.tsx
+    |-- component
+    |   |-- addEditExpenseForm.tsx
+    |   |-- const.ts
+    |   |-- expenseList.tsx
+    |   |-- headerExpensesStatus.tsx
+    |-- data
+    |   |-- redux
+    |       |-- store.ts
+    |       |-- actions
+    |       |   |-- expenseActions.ts
+    |       |-- const
+    |       |   |-- expenseConst.ts
+    |       |-- reducer
+    |           |-- expenseReducer.ts
+    |-- helper
+        |-- alert.ts
+        |-- format.ts
+        |-- scale.ts
+
 
 ## Getting Started
 
