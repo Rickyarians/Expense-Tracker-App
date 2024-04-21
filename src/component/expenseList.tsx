@@ -44,8 +44,8 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
               paddingHorizontal: horizontalScale(6),
               justifyContent: 'center',
             }}>
-            <Text>{item.description}</Text>
-            <Text>{formatRupiah(item.amount)}</Text>
+            <Text style={{color: color.text}}>{item.description}</Text>
+            <Text style={{color: color.text}}>{formatRupiah(item.amount)}</Text>
           </View>
           <View style={{flex: 1, justifyContent: 'center'}}>
             <TouchableOpacity
@@ -83,7 +83,7 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
             </TouchableOpacity>
           </View>
         </View>
-        <Text style={{textAlign: 'right', fontSize: moderateScale(10)}}>
+        <Text style={{textAlign: 'right', fontSize: moderateScale(10), color: color.text}}>
           {/* {item?.date} */}
               {formatDate(item?.date)}
         </Text>
@@ -92,13 +92,14 @@ const ExpenseList = ({expenses, onEdit, onDelete}: any) => {
   );
 
   return (
-    <View>
+    // <View sty>
       <FlatList
+      contentContainerStyle={{ flexGrow: 1 }}
         data={expenses}
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
-    </View>
+    // </View>
   );
 };
 

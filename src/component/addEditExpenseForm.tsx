@@ -9,7 +9,7 @@ import {
   View,
 } from 'react-native';
 import {showAlert} from '../helper/alert';
-import {horizontalScale, verticalScale} from '../helper/scale';
+import {horizontalScale, moderateScale, verticalScale} from '../helper/scale';
 import {cardStyle, color, typeExpense} from './const';
 
 const AddEditExpenseForm = ({expense, onSubmit, onBack}: any) => {
@@ -67,15 +67,19 @@ const AddEditExpenseForm = ({expense, onSubmit, onBack}: any) => {
             paddingHorizontal: horizontalScale(10),
             paddingVertical: verticalScale(10),
             borderRadius: 6,
+            marginVertical: verticalScale(10)
           },
         ]}>
+       {expense &&  <Text style={{textAlign: 'center', color: color.text, fontWeight: '600', fontSize: moderateScale(18)}}>Edit Data</Text>}
         <TextInput
+          placeholderTextColor={color.gray}
           style={styleInput.input}
           placeholder="Deskripsi"
           value={description}
           onChangeText={setDescription}
         />
         <TextInput
+         placeholderTextColor={color.gray}
           style={styleInput.input}
           placeholder="Jumlah"
           keyboardType="numeric"
@@ -148,6 +152,7 @@ const styleInput = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 6,
     marginVertical: 4,
+    color: color.text
   },
   buttonAction: {
     justifyContent: 'center',

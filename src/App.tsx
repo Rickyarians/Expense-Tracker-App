@@ -74,7 +74,7 @@ function App(): React.JSX.Element {
               onBack={(data: any) => dispatch(cancelEditDataExpense(null))}
             />
           ) : (
-            <View>
+            <View style={{flex: 1, flexDirection: 'column'}}>
               <AddEditExpenseForm onSubmit={handleAddExpense} />
               <Text style={styles.titleList}>
                 Daftar Pendapatan & Pengeluaran
@@ -83,7 +83,7 @@ function App(): React.JSX.Element {
                 <Text>Loading...</Text>
               ) : (
                 <ExpenseList
-                  expenses={sortDescByDate(expenses)}
+                  expenses={expenses}
                   onEdit={(data: any) => dispatch(setEditDataExpense(data))}
                   onDelete={handleDeleteExpense}
                 />
