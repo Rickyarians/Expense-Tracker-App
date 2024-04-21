@@ -4,23 +4,28 @@
 
 ## Folder Structure
 
-├── src
-│ ├── controller
-│ │ ├── **/\*.css
-│ ├── views
-│ ├── model
-│ ├── index.js
-├── public
-│ ├── css
-│ │ ├── **/\*.css
-│ ├── images
-│ ├── js
-│ ├── index.html
-├── dist (or build
-├── node_modules
-├── package.json
-├── package-lock.json
-└── .gitignore
+|-- permatamobile
+|-- App.tsx
+|-- directoryList.md
+|-- main.tsx
+|-- component
+| |-- addEditExpenseForm.tsx
+| |-- const.ts
+| |-- expenseList.tsx
+| |-- headerExpensesStatus.tsx
+|-- data
+| |-- redux
+| |-- store.ts
+| |-- actions
+| | |-- expenseActions.ts
+| |-- const
+| | |-- expenseConst.ts
+| |-- reducer
+| |-- expenseReducer.ts
+|-- helper
+|-- alert.ts
+|-- format.ts
+|-- scale.ts
 
 ## Getting Started
 
