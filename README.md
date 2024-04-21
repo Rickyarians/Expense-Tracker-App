@@ -2,31 +2,33 @@
 
 ## Tech Stack
 
+- [React Native] 
+- [Redux]
+
+
 ## Folder Structure
 
 ```
-|-- permatamobile
-    |-- App.tsx
-    |-- directoryList.md
-    |-- main.tsx
-    |-- component
-    |   |-- addEditExpenseForm.tsx
-    |   |-- const.ts
-    |   |-- expenseList.tsx
-    |   |-- headerExpensesStatus.tsx
-    |-- data
-    |   |-- redux
-    |       |-- store.ts
-    |       |-- actions
-    |       |   |-- expenseActions.ts
-    |       |-- const
-    |       |   |-- expenseConst.ts
-    |       |-- reducer
-    |           |-- expenseReducer.ts
-    |-- helper
-        |-- alert.ts
-        |-- format.ts
-        |-- scale.ts
+├── App.tsx
+├── component
+│   ├── addEditExpenseForm.tsx
+│   ├── const.ts
+│   ├── expenseList.tsx
+│   └── headerExpensesStatus.tsx
+├── data
+│   └── redux
+│       ├── actions
+│       │   └── expenseActions.ts
+│       ├── const
+│       │   └── expenseConst.ts
+│       ├── reducer
+│       │   └── expenseReducer.ts
+│       └── store.ts
+├── helper
+│   ├── alert.ts
+│   ├── format.ts
+│   └── scale.ts
+└── main.tsx
 ```
 
 ## Getting Started
@@ -84,3 +86,7 @@ yarn ios
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+
+
+[React Native]: <https://reactnative.dev/>
+[Redux]: <https://redux-toolkit.js.org/>
