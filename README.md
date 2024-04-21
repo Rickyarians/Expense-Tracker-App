@@ -4,6 +4,7 @@
 
 ## Folder Structure
 
+```
 |-- permatamobile
     |-- App.tsx
     |-- directoryList.md
@@ -26,7 +27,7 @@
         |-- alert.ts
         |-- format.ts
         |-- scale.ts
-
+```
 
 ## Getting Started
 
