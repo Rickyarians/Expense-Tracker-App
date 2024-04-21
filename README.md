@@ -4,32 +4,23 @@
 
 ## Folder Structure
 
-project-root/
-│
-├── src/
-│ ├── components/
-│ │ ├── Component1/
-│ │ │ ├── Component1.js
-│ │ │ └── Component1.styles.js
-│ │ └── Component2/
-│ │ ├── Component2.js
-│ │ └── Component2.styles.js
-│ ├── screens/
-│ │ ├── Screen1/
-│ │ │ ├── Screen1.js
-│ │ │ └── Screen1.styles.js
-│ │ └── Screen2/
-│ │ ├── Screen2.js
-│ │ └── Screen2.styles.js
-│ ├── utils/
-│ ├── navigation/
-│ ├── assets/
-│ ├── App.js
-│ └── index.js
-│
-├── README.md
+├── src
+│ ├── controller
+│ │ ├── **/\*.css
+│ ├── views
+│ ├── model
+│ ├── index.js
+├── public
+│ ├── css
+│ │ ├── **/\*.css
+│ ├── images
+│ ├── js
+│ ├── index.html
+├── dist (or build
+├── node_modules
 ├── package.json
-└──
+├── package-lock.json
+└── .gitignore
 
 ## Getting Started
 
